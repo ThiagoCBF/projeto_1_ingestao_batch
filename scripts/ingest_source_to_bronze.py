@@ -4,7 +4,7 @@ from pathlib import Path
 import os
 import pyspark.sql.functions as F
 
-DATALAKE_PATH = '/home/thiagoferreira/Área de trabalho/portfolio/datalake'
+DATALAKE_PATH = ' '
 
 import os
 from pyspark.sql import SparkSession
