@@ -1,10 +1,17 @@
 # 📊 Ingestão de Dados em Batch com Airflow e Delta Lake
 
-Este projeto realiza a **ingestão de dados transacionais em batch**, organizados em camadas no padrão **medalhão**:  
-`source → bronze → silver`.
+O objetivo deste projeto é **simular um pipeline de ingestão de dados transacionais em batch**, aplicando a arquitetura em camadas (medalhão): **source → bronze → silver**.  
 
-Todo o pipeline é executado **localmente**, orquestrado por uma instância do **Apache Airflow**, e utilizando **Apache Spark** com suporte ao **Delta Lake**.  
+Com isso, busca-se:  
+- ✅ **Gerar dados mockados** de um sistema transacional para simular o fluxo real;  
+- ✅ **Orquestrar a ingestão diária** desses arquivos utilizando o **Apache Airflow**;  
+- ✅ **Processar os dados** em larga escala com **Apache Spark**;  
+- ✅ **Armazenar em formato Delta Lake**, garantindo versionamento, consistência e eficiência;  
+- ✅ **Fornecer um exemplo didático** de como funcionaria um fluxo de ingestão de dados em um ambiente de **engenharia de dados moderna**.  
 
+Este projeto tem caráter **educacional e prático**, servindo como base para estudos em **engenharia de dados, processamento distribuído e orquestração de pipelines**. 
+
+Todo o pipeline é executado **localmente**, orquestrado por uma instância do **Apache Airflow**, e utilizando **Apache Spark** com suporte ao **Delta Lake**.
 
 ⚠️ Obs: Foi utilizado **PySpark** por questões didáticas. Em um contexto real, a massa de dados precisaria ser maior para justificar essa tecnologia mas, para integração com o Delta o PySpark é a escolha mais prática.
 
